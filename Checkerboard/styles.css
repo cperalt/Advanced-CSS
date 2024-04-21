@@ -17,7 +17,7 @@ main {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: #CECECE;
+    background-color: #769659;
 }
 
 section {
@@ -28,12 +28,19 @@ section {
 .square {
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .black {
-    background-color: black;
+    background-color: #eeeed2;
 }
 
 .white {
-    background-color: white;
+    background-color: #baca44;
+}
+
+i {
+    font-size: 80px;
 }
