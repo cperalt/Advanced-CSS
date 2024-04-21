@@ -27,6 +27,12 @@ body {
     position: relative;
 }
 
+#container:hover {
+    transition: transform 2s;
+    transform: scale(1.5);
+    box-shadow: 9px 9px 12px blue;
+}
+
 .flag {
     display: grid;
     height: 25rem;
