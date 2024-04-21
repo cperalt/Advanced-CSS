@@ -1,0 +1,27 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #C5ADC5;
+}
+
+a {
+    font-size: 9rem;
+    text-decoration: none;
+    color: #0b097b;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+i {
+    font-size: 9rem;
+    margin-top: 9rem;
+}
