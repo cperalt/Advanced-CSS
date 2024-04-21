@@ -25,11 +25,13 @@ html {
   font-weight: 600;
   src: url("https://raw.githubusercontent.com/blaisck/sfwin/master/SFPro/TrueType/SFProDisplay-SemiBold.ttf");
 }
+
 body {
     display: flex;
-    align-items: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     justify-content: center;
+    align-items: center;
     background-color: #fff;
 }
 
@@ -37,13 +39,20 @@ body {
 .container {
     display: grid;
     position: relative;
-    grid-template-rows: repeat(2, 28.125rem);
-    grid-template-columns: repeat(4, 22.5rem);
+    grid-template-columns: repeat(1, 22.5rem);
     column-gap: 2rem;
     row-gap: 1rem;
+    padding: 20px 0;
+
+    @media only screen and (min-width: 481px) {
+        grid-template-rows: repeat(2, 28.125rem);
+        grid-template-columns: repeat(4, 22.5rem);
+        padding: 0;
+    }
+
 }
 
-#card {
+.card {
     width: 22.5rem;
     height: 28.125rem;
     box-shadow: 4px 4px 12px #00000014;
@@ -100,4 +109,13 @@ section {
     font-family:  SF Pro Text, Helvetica Neue, Helvetica, Arial, sans-serif;
     line-height: 1.2353;
     padding-top: 10px;
+}
+
+.card_hover > div {
+    transition: transform 1s;
+}
+
+.card_hover > div:hover {
+    transition: transform 1s;
+    transform: scale(1.05);
 }
