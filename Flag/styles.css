@@ -1,12 +1,17 @@
 
-html {
-  box-sizing: border-box;
-  background-color: #ffffff;
-  padding: auto;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+html {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: auto;
+    font-size: 8px;
+
+    @media only screen and (min-width: 481px) {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -19,17 +24,14 @@ body {
 }
 
 #container {
-    height: 400px;
-    width: 760px;
-    background-color: green;
     position: relative;
 }
 
 .flag {
     display: grid;
-    height: 400px;
-    grid-template-columns: 760px;
-    grid-template-rows: repeat(13, 30.77px);
+    height: 25rem;
+    grid-template-columns: 47.5rem;
+    grid-template-rows: repeat(13, 1.923rem);
 }
 
 .red {
@@ -41,18 +43,22 @@ body {
 }
 
 .square {
-    width: 304px;
-    height: 215.4px;
+    width: 19rem;
+    height: 13.463rem;
     background-color: #002147;
     position: absolute;
     top: 0;
     display: grid;
-    grid-template-columns: repeat(11, 25.2px);
-    grid-template-rows: repeat(8, 21.6px);
-    padding-top: 8px;
-    padding-left: 12px;
+    grid-template-columns: repeat(11, 1.575rem);
+    grid-template-rows: repeat(8, 1.35rem);
+    padding-top: 0.5rem;
+    padding-left: 0.75rem;
+
 }
 
 img {
     position: absolute;
+    width: 1.54rem;
+    height: 1.54rem;
 }
+
